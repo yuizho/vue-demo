@@ -18,7 +18,6 @@ const eventName = 'mouseover'
 </script>
 
 <template>
-  <h1>基本</h1>
   <h2>テンプレート構文</h2>
   <p :id="dynamicId">Message: {{ plainMsg }}</p>
   <p v-html="rawHtml"></p>

@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Template from './components/basics/Template.vue'
+import Reactivity from './components/basics/Reactivity.vue'
 
 const plainMsg = 'Welcome to Your Vue.js App'
 const dynamicId = 'welcome-message'
@@ -30,7 +31,9 @@ const eventName = 'mouseover'
   </header>
 
   <main>
+    <h1>基本</h1>
     <Template />
+    <Reactivity />
   </main>
 </template>
 
