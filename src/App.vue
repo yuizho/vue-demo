@@ -2,6 +2,7 @@
 import Template from './components/basics/Template.vue'
 import Reactivity from './components/basics/Reactivity.vue'
 import Computed from './components/basics/Computed.vue'
+import ClassStyleBinding from './components/basics/ClassStyleBinding.vue'
 
 const plainMsg = 'Welcome to Your Vue.js App'
 const dynamicId = 'welcome-message'
@@ -27,6 +28,7 @@ const eventName = 'mouseover'
     <Template />
     <Reactivity />
     <Computed />
+    <ClassStyleBinding />
   </main>
 </template>
 
