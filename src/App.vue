@@ -4,6 +4,7 @@ import Reactivity from './components/basics/Reactivity.vue'
 import Computed from './components/basics/Computed.vue'
 import ClassStyleBinding from './components/basics/ClassStyleBinding.vue'
 import RenderingWithCondition from './components/basics/RenderingWithCondition.vue'
+import ListRendering from './components/basics/ListRendering.vue'
 
 const plainMsg = 'Welcome to Your Vue.js App'
 const dynamicId = 'welcome-message'
@@ -31,6 +32,7 @@ const eventName = 'mouseover'
     <Computed />
     <ClassStyleBinding />
     <RenderingWithCondition />
+    <ListRendering />
   </main>
 </template>
 
