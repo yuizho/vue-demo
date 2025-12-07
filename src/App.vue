@@ -8,6 +8,7 @@ import ListRendering from './components/basics/ListRendering.vue'
 import EventHandling from './components/basics/EventHandling.vue'
 import FormBinding from './components/basics/FormBinding.vue'
 import Watcher from './components/basics/Watcher.vue'
+import TemplateReference from './components/basics/TemplateReference.vue'
 
 const plainMsg = 'Welcome to Your Vue.js App'
 const dynamicId = 'welcome-message'
@@ -39,6 +40,7 @@ const eventName = 'mouseover'
     <EventHandling />
     <FormBinding />
     <Watcher />
+    <TemplateReference />
   </main>
 </template>
 
