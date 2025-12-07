@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 import Template from './components/basics/Template.vue'
 import Reactivity from './components/basics/Reactivity.vue'
 import Computed from './components/basics/Computed.vue'
@@ -9,6 +10,7 @@ import EventHandling from './components/basics/EventHandling.vue'
 import FormBinding from './components/basics/FormBinding.vue'
 import Watcher from './components/basics/Watcher.vue'
 import TemplateReference from './components/basics/TemplateReference.vue'
+import Component from './components/basics/Component.vue'
 
 const plainMsg = 'Welcome to Your Vue.js App'
 const dynamicId = 'welcome-message'
@@ -26,6 +28,8 @@ const showAlert = (eventName) => {
 const attributeName = 'href'
 const url = 'https://vuejs.org/'
 const eventName = 'mouseover'
+
+const componentFontSize = ref(1)
 </script>
 
 <template>
@@ -41,6 +45,15 @@ const eventName = 'mouseover'
     <FormBinding />
     <Watcher />
     <TemplateReference />
+    <div :style="{ fontSize: componentFontSize + 'em' }">
+      <Component
+        title="Hello Vue!"
+        @enlarge-text="componentFontSize += 0.1"
+        @shrink-text="componentFontSize -= 0.1"
+      >
+        <p>これは親から渡したテキストです。</p>
+      </Component>
+    </div>
   </main>
 </template>
 
