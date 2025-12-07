@@ -7,6 +7,7 @@ import RenderingWithCondition from './components/basics/RenderingWithCondition.v
 import ListRendering from './components/basics/ListRendering.vue'
 import EventHandling from './components/basics/EventHandling.vue'
 import FormBinding from './components/basics/FormBinding.vue'
+import Watcher from './components/basics/Watcher.vue'
 
 const plainMsg = 'Welcome to Your Vue.js App'
 const dynamicId = 'welcome-message'
@@ -37,6 +38,7 @@ const eventName = 'mouseover'
     <ListRendering />
     <EventHandling />
     <FormBinding />
+    <Watcher />
   </main>
 </template>
 
