@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import Props from './Props.vue'
 import Event from './Event.vue'
 import VModel from './VModel.vue'
+import FololwThrough from './FololwThrough.vue'
 
 const title = 'コンポーネントのタイトル'
 const callback = (where) => {
@@ -17,5 +18,6 @@ const countModel = ref(0)
     <Props :title="title" />
     <Event @some-event="callback" />
     <VModel v-model="countModel" v-model:title="title" />
+    <FololwThrough style="color: red" />
   </div>
 </template>
