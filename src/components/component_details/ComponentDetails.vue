@@ -4,6 +4,7 @@ import Props from './Props.vue'
 import Event from './Event.vue'
 import VModel from './VModel.vue'
 import FololwThrough from './FololwThrough.vue'
+import Slot from './Slot.vue'
 
 const title = 'コンポーネントのタイトル'
 const callback = (where) => {
@@ -19,5 +20,6 @@ const countModel = ref(0)
     <Event @some-event="callback" />
     <VModel v-model="countModel" v-model:title="title" />
     <FololwThrough style="color: red" />
+    <Slot> <template v-slot:icon>🐶</template> 親から渡したボタンテキスト </Slot>
   </div>
 </template>
