@@ -2,6 +2,7 @@
 import Basics from './components/basics/Basics.vue'
 import ComponentDetails from './components/component_details/ComponentDetails.vue'
 import Reusability from './components/reusability/Reusability.vue'
+import EmbdedComponent from './components/embded_component/EmbdedComponent.vue'
 </script>
 
 <template>
@@ -11,5 +12,7 @@ import Reusability from './components/reusability/Reusability.vue'
     <ComponentDetails />
     <hr />
     <Reusability />
+    <hr />
+    <EmbdedComponent />
   </main>
 </template>
